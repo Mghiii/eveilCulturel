@@ -1,0 +1,180 @@
+/* apropos.css */
+.apropos-page {
+  background: linear-gradient(to right, #f6f9fc, #e0eafc);
+  padding: 4rem 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+.apropos-container {
+  max-width: 1100px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.apropos-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.apropos-header h1 {
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  text-shadow: 1px 4px 3px var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.sous-titre {
+  font-size: 1.2rem;
+  color: #555;
+  font-style: italic;
+}
+
+.apropos-card {
+  padding: 2rem;
+  background-color: #f9fafc;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  border-left: 5px solid #a3741c;
+  transition: all 0.3s ease;
+}
+
+.apropos-card:hover {
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.icone-wrapper {
+  width: 60px;
+  height: 60px;
+  background-color: #fff7e6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icone {
+  font-size: 1.8rem;
+  color: #a3741c;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+}
+
+.pedagogie-list {
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+.pedagogie-list li {
+  margin-bottom: 0.6rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.pedagogie-list li::before {
+  content: "✔";
+  color: #a3741c;
+  font-size: 0.9rem;
+  position: absolute;
+  left: 0;
+}
+
+.tech-stack {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.tech-stack h3 {
+  font-size: 1.6rem;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+.outils-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.outil-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.tech-icone {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.tech-icone:hover {
+  transform: scale(1.1);
+}
+
+.react {
+  color: #61dafb;
+}
+
+.figma {
+  color: #f24e1e;
+}
+
+.apropos-footer {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .apropos-container {
+    padding: 2rem;
+  }
+
+  .apropos-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .tech-icone {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .apropos-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .tech-icone {
+    font-size: 2rem;
+  }
+}

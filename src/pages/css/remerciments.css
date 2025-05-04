@@ -1,0 +1,227 @@
+/* src/pages/Remerciments.css */
+:root {
+  --gold: rgb(163, 116, 28);
+  --teal: rgb(5, 160, 160);
+  --dark: #333333;
+  --light: #f8f8f8;
+  --lighter-gold: rgba(163, 116, 28, 0.1);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.remerciements-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--light) 0%, #f8f8f8dd 100%);
+  padding: 4rem 1rem;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.remerciements-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  padding: 3rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.remerciements-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.remerciements-header h1 {
+  color: var(--dark);
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.remerciements-header .subtitle {
+  color: var(--teal);
+  font-size: 1.2rem;
+  font-weight: 500;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.remerciements-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold) 0%, var(--teal) 100%);
+}
+
+.remerciements-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.thank-card {
+  padding: 2rem;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.thank-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold) 0%, var(--teal) 100%);
+}
+
+.thank-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--lighter-gold) 0%, rgba(5, 160, 160, 0.1) 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+}
+
+.icon {
+  color: var(--teal);
+  font-size: 1.8rem;
+  transition: var(--transition);
+}
+
+.thank-card:hover .icon {
+  color: var(--gold);
+  transform: scale(1.1);
+}
+
+.thank-card h2 {
+  color: var(--dark);
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.thank-card p {
+  color: #5a5a5a;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.thank-card strong {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.remerciements-footer {
+  text-align: center;
+  padding: 3rem 0 0;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.remerciements-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+}
+
+.closing-message {
+  color: var(--dark);
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.heart-icon {
+  color: #ff4757;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  filter: drop-shadow(0 2px 4px rgba(255, 71, 87, 0.2));
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  15% { transform: scale(1.2); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.1); }
+  60% { transform: scale(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .remerciements-container {
+    padding: 2rem;
+    border-radius: 16px;
+  }
+
+  .remerciements-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .thank-card {
+    padding: 1.5rem;
+  }
+
+  .icon-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .remerciements-page {
+    padding: 2rem 1rem;
+  }
+
+  .remerciements-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .thank-card h2 {
+    font-size: 1.2rem;
+  }
+}

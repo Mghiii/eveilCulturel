@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./css/home.css";
+import { Link } from "react-router-dom";
 
 export default function Home({ images, students, themes }) {
   const [currentBg, setCurrentBg] = useState(0);
@@ -57,7 +58,12 @@ export default function Home({ images, students, themes }) {
             <p>
               Découvrez les créations artistiques de nos étudiants ingénieurs
             </p>
-            <button className="cta-button">Explorer les projets</button>
+            <Link
+              to="/AllProjects"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <button className="cta-button">Explorer les projets</button>
+            </Link>
           </div>
         </div>
       </section>

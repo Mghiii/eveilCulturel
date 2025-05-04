@@ -342,7 +342,10 @@ function App() {
                 />
               }
             />
-            <Route path="/AllProjects" element={<AllProjects />} />
+            <Route
+              path="/AllProjects"
+              element={<AllProjects students={studentProjects} />}
+            />
             <Route path="/Remerciments" element={<Remerciments />} />
             <Route path="/Apropos" element={<Apropos />} />
             <Route path="/DetailsProject/:id" element={<DetailsProject />} />
