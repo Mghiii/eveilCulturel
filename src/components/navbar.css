@@ -100,7 +100,7 @@
   
   .nav-links {
     position: fixed;
-    top: 80px;
+    top: 125px;
     left: 0;
     right: 0;
     flex-direction: column;
