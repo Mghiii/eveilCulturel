@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+:root {
+  --background-color: #fffeee;
+  --background-color2: #fffeeed2;
+  --primary-color: rgb(163, 116, 28);
+  --secondary-color: rgb(5, 160, 160);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  margin: 0;
+  background: linear-gradient(
+      rgba(155, 155, 155, 0.5),
+      rgba(155, 155, 155, 0.5)
+    ),
+    url("/public/images/zellige(1).png");
+  background-attachment: fixed;
+  font-family: "Libre Bodoni", serif;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-container {
+  max-width: 1600px;
+  margin: 10px auto;
+  background-color: var(--background-color2);
+  border-radius: 40px 40px 0 0;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-content {
+  padding: 2rem;
+  min-height: calc(100vh - 120px);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    background-attachment: scroll;
   }
-  to {
-    transform: rotate(360deg);
+
+  .app-container {
+    border-radius: 0;
+  }
+
+  .main-content {
+    padding: 1rem;
   }
 }
