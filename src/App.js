@@ -67,7 +67,7 @@ function App() {
       name: "Mohammed Mimoun",
       projectTitle: "La culture marocaine",
       image: "/images/students/mimoun.png",
-      tags: ["Art expérimental", "Science"],
+      tags: ["Patrimoine marocain", "Traditions"],
       projet:
         "https://drive.google.com/file/d/1YuhrEN-bQHmlkUzF8kytyJdXuH0JSaEc/view?usp=drive_link",
     },
@@ -76,7 +76,7 @@ function App() {
       name: "Jassir Matalah",
       projectTitle: "le maroc une diversité culturelle",
       image: "/images/students/jassir.jpeg",
-      tags: ["Artisanat", "Innovation"],
+      tags: ["Héritage culturel", "Culture berbère", "Culture arabe"],
       projet: "https://jasir-project-8t6cloj53-mghiiis-projects.vercel.app/",
     },
     {
