@@ -4,7 +4,6 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import AllProjects from "./pages/AllProjects";
-import Galerie from "./pages/Galerie";
 import Remerciments from "./pages/Remerciments";
 import DetailsProject from "./pages/DetailsProject";
 import Apropos from "./pages/Apropos";
@@ -41,9 +40,9 @@ function App() {
     {
       id: 2,
       name: "Yousra Derdour",
-      projectTitle: "Zellige Moderne",
+      projectTitle: "Un voyage dans le monde entier",
       image: "/images/students/yousra.jpeg",
-      tags: ["Art traditionnel", "Innovation"],
+      tags: ["Voyage", "Exploration", "Culture mondiale"],
       projet:
         "https://drive.google.com/file/d/1wJDBSaSV6hfVYeZvvPGRESL9D18lKAat/view",
     },
@@ -66,16 +65,19 @@ function App() {
     {
       id: 5,
       name: "Mohammed Mimoun",
-      projectTitle: "Peinture Luminescente",
-      image: "/images/students/youssef.jpg",
+      projectTitle: "La culture marocaine",
+      image: "/images/students/mimoun.png",
       tags: ["Art expérimental", "Science"],
+      projet:
+        "https://drive.google.com/file/d/1YuhrEN-bQHmlkUzF8kytyJdXuH0JSaEc/view?usp=drive_link",
     },
     {
       id: 6,
-      name: "Amina Belhaj",
-      projectTitle: "Tissage Digital",
-      image: "/images/students/amina.jpg",
+      name: "Jassir Matalah",
+      projectTitle: "le maroc une diversité culturelle",
+      image: "/images/students/jassir.jpeg",
       tags: ["Artisanat", "Innovation"],
+      projet: "https://jasir-project-8t6cloj53-mghiiis-projects.vercel.app/",
     },
     {
       id: 7,
