@@ -77,7 +77,7 @@ function App() {
       projectTitle: "le maroc une diversité culturelle",
       image: "/images/students/jassir.jpeg",
       tags: ["Héritage culturel", "Culture berbère", "Culture arabe"],
-      projet: "https://jasir-project-8t6cloj53-mghiiis-projects.vercel.app/",
+      projet: "https://jasir-project.vercel.app/",
     },
     {
       id: 7,
